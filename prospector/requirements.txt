@@ -1,0 +1,9 @@
+astro-prospector
+astropy[recommended]
+setuptools
+setuptools_scm
+pep517
+emcee
+dynesty
+h5py
+astro-sedpy
