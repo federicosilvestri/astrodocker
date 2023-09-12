@@ -35,3 +35,5 @@ RUN pip install -r requirements.txt && rm requirements.txt
 # Setting workspace
 RUN mkdir /opt/code/
 WORKDIR /opt/code
+
+CMD [ "jupyter notebook" ]

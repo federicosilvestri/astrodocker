@@ -7,3 +7,5 @@ emcee
 dynesty
 h5py
 astro-sedpy
+jupyter
+prospector
