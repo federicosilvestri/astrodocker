@@ -36,4 +36,7 @@ RUN pip install -r requirements.txt && rm requirements.txt
 RUN mkdir /opt/code/
 WORKDIR /opt/code
 
-CMD [ "jupyter notebook" ]
+# Expose the port 8888 for Jupyter
+EXPOSE 8888
+
+CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]

@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  prospector:
+    build:
+      context: .
+    image: prospector
+    container_name: prospector
+    volumes:
+      - ./data:/opt/code/
+    ports:
+      - "8888:8888"
