@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  bagpipes:
+    build:
+      context: .
+    image: bagpipes
+    container_name: bagpipes
+    volumes:
+      - ./data:/opt/code/
+    ports:
+      - "8888:8888"
